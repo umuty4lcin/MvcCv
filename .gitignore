@@ -1,0 +1,58 @@
+## .NET / Visual Studio
+
+# Derleme ciktilari — kaynaktan yeniden uretilir, asla commit edilmez
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio kullanici ayarlari (kisisel, makineye ozel)
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider / VS Code
+.idea/
+*.sln.iml
+.vscode/
+
+# Build ve yayin
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+x64/
+x86/
+publish/
+*.publishsettings
+PublishScripts/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Node (ileride frontend eklenirse)
+node_modules/
+
+# Yerel gizli ayarlar — baglanti cumlesi, API anahtari vb.
+# Uretim ayarlari asla repoya girmez; user secrets veya ortam degiskeni kullanilir
+appsettings.Production.json
+appsettings.*.Local.json
+secrets.json
+
+# Isletim sistemi artiklari
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Gecici / yedek
+*.bak
+*.tmp
+*.orig
+*.swp

@@ -1,0 +1,23 @@
+﻿@model MvcCv.Models.Entity.TblSertifikalarim
+@{
+    ViewBag.Title = "SertifikaGetir"; Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Sertifika Düzenleme</h2>
+
+<form method="post">
+
+    @Html.Label("Sertifika Id")
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+    <a href="/Sertifika/SertifikaSil?id=@Model.Id" class="btn btn-danger">Sil</a>
+
+</form>

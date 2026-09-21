@@ -1,0 +1,24 @@
+﻿
+<div class="resume-section-content">
+    <!-- Formu POST olarak ayarlıyoruz ve Default Controller'daki 'MesajGonder' metoduna yönlendiriyoruz -->
+    
+    <form method="post" action="/Default/MesajGonder">
+        <h2 class="mb-5">İletişim</h2>
+
+        <label>Ad Soyad</label>
+        <!-- name="AdSoyad" modeldeki AdSoyad ile aynı olmalı -->
+        <input type="text" name="AdSoyad" class="form-control mb-3" required>
+
+        <label>Mail </label>
+        <input type="email" name="Mail" class="form-control mb-3" placeholder="ornek@mail.com" required>
+
+        <label>Konu </label>
+        <input type="text" name="Konu" class="form-control mb-3" required>
+
+        <label>Mesaj </label>
+        <!-- Mesaj alanı için input yerine textarea kullanmak çok satırlı yazılar için daha iyi olabilir, input da kalabilir -->
+        <textarea name="Mesaj" class="form-control mb-3" rows="4" required></textarea>
+        <br />
+        <button type="submit" class="btn btn-info">Mesaj Gönder</button>
+    </form>
+</div>

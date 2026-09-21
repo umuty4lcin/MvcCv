@@ -1,0 +1,22 @@
+﻿@model MvcCv.Models.Entity.TblYeteneklerim
+@{
+    ViewBag.Title = "Yeni Deneyim Ekle"; Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Yeni Yetenek Ekle</h2>
+
+<form method="post">
+
+    @Html.Label("Yetenek Id")
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.Label("Yetenek")
+    @Html.TextBoxFor(x => x.Yetenek, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Oran")
+    @Html.TextBoxFor(x => x.Oran, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+
+</form>

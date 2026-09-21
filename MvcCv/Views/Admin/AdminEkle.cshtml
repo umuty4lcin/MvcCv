@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Admin Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Yeni Admin Ekleme Sayfası</h4>
+<br />
+
+      @if (ViewBag.Hata != null)
+      {
+          <div class="alert alert-danger">@ViewBag.Hata</div>
+      }
+
+<form method="post">
+    <label>Kullanıcı Adı</label>
+    <input type="text" name="KullaniciAdi" class="form-control" placeholder="Kullanıcı Adını Yazınız"/>
+    <br />
+
+    <label>Şifreniz</label>
+    <input type="password" name="Sifre" class="form-control" placeholder="Parolayı Yazınız"/>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
