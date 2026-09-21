@@ -98,7 +98,7 @@ eklendiğinde korumayı unutmak mümkün değildir.
 **1. Depoyu klonla**
 
 ```bash
-git clone https://github.com/<kullanici-adin>/MvcCv.git
+git clone https://github.com/umuty4lcin/MvcCv.git
 cd MvcCv
 ```
 
